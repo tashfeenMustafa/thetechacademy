@@ -1,19 +1,22 @@
 import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import WelcomeDialog from './Components/WelcomeDialog.js';
-import View from './Components/View.js';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Login from './Components/Login/Login.js';
+import AdminPanel from './Components/Admin/AdminPanel.js';
+import About from './Components/Client/AboutUs.js';
+import Home from './Components/Client/Home.js';
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
-      <MuiThemeProvider>
-        <section>
-          <WelcomeDialog />
-          <View />
-        </section>
-      </MuiThemeProvider>
+      <BrowserRouter>
+        <div>
+          <Route path="/" exact component={Home} />
+          <Route path="/login" exact component={Login}/>
+          <Route path="/admin" exact component={AdminPanel} />
+          <Route path="/about-us" exact component={About} />
+        </div>
+      </BrowserRouter>
     );
   }
 }

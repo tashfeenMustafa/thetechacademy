@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import TextField from 'material-ui/TextField';
+
 import AdminHeader from './AdminHeader.js';
 import Pages from './Pages.js';
 import Stats from './Stats.js';
 import Users from './Users.js';
-import Settings from './Settings';
-
-import './Admin.css';
+import Settings from './Settings.js';
 
 class Content extends React.Component {
   render () {
@@ -30,7 +30,15 @@ class Content extends React.Component {
               <div>
                 <AdminHeader />
               </div>
-              <h1 className="admin get-started">Upload Content</h1>
+              <h1 className="">Upload Content</h1>
+
+              <div>
+                <TextField
+                    hintText="Full width"
+                    fullWidth={true}
+                />
+              </div>
+
             </div>
           </main>
           <div>

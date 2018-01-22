@@ -8,7 +8,7 @@ class AdminHeader extends React.Component {
             <span className="mdl-layout-title">Welcome to The Panel</span>
             <div className="mdl-layout-spacer"></div>
             <nav className="mdl-navigation">
-              <a className="mdl-navigation__link logout-button" href="">Logout</a>
+              <a className="mdl-navigation__link logout-button" href="/logout">Logout</a>
             </nav>
           </div>
       </header>

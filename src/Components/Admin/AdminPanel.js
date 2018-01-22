@@ -18,11 +18,11 @@ class AdminPanel extends React.Component {
           <div className="mdl-layout__drawer">
             <span className="mdl-layout-title">Admin Panel</span>
             <nav className="mdl-navigation">
-              <a className="mdl-navigation__link" href="/content">Content</a>
-              <a className="mdl-navigation__link" href="/pages">Pages</a>
-              <a className="mdl-navigation__link" href="/stats">Stats</a>
-              <a className="mdl-navigation__link" href="/users">Users</a>
-              <a className="mdl-navigation__link" href="/settings">Settings</a>
+              <a className="mdl-navigation__link" href="/admin/content">Content</a>
+              <a className="mdl-navigation__link" href="/admin/pages">Pages</a>
+              <a className="mdl-navigation__link" href="/admin/stats">Stats</a>
+              <a className="mdl-navigation__link" href="/admin/users">Users</a>
+              <a className="mdl-navigation__link" href="/admin/settings">Settings</a>
             </nav>
           </div>
           <main className="mdl-layout__content">

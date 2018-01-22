@@ -3,6 +3,7 @@
 *****/
 import React from 'react';
 import ReactModal from 'react-modal';
+import FontAwesome from 'react-fontawesome';
 
 class WelcomeDialog extends React.Component {
   constructor (props) {
@@ -33,9 +34,12 @@ class WelcomeDialog extends React.Component {
         <ReactModal
           isOpen={this.state.showModal} >
           <div>
+            <div>
+              <FontAwesome name="close" />
+            </div>
             <h1>Welcome to</h1>
             <h1>The Tech Academy</h1>
-            <p>We have made an interactive game for you to browse through out website. Below this screen is a maze that you can <a href="#" onClick={this.handlePlayGame}>play</a> to go to any section. Or you can just <a href="#" onClick={this.handleSkipGame}>skip</a> and browse freely.</p>
+            <p>We have made an interactive game for you to browse through out website. Below this screen is a maze that you can <a href="/game" onClick={this.handlePlayGame}>play</a> to go to any section. Or you can just <a href="/" onClick={this.handleSkipGame}>skip</a> and browse freely.</p>
           </div>
         </ReactModal>
       </div>

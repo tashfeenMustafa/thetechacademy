@@ -1,6 +1,168 @@
+@font-face {
+  font-family: "Antipasto - Regular";
+  src: url('./fonts/antipasto/Antipasto-RegularTrial.ttf');
+}
+@font-face {
+  font-family: "Antipasto - ExtraLight";
+  src: url('./fonts/antipasto/Antipasto-ExtraLightTrial.ttf');
+}
+@font-face {
+  font-family: "Antipasto - ExtraBold";
+  src: url('./fonts/antipasto/Antipasto-ExtraBold.ttf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Thin";
+  src: url('./fonts/Brandon_Grotesque/Brandon_thin.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Thin Italic";
+  src: url('./fonts/Brandon_Grotesque/Brandon_thin_it.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Regular";
+  src: url('./fonts/Brandon_Grotesque/Brandon_reg.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Regular Italic";
+  src: url('./fonts/Brandon_Grotesque/Brandon_reg_it.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Medium";
+  src: url('./fonts/Brandon_Grotesque/Brandon_med.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Medium Italic";
+  src: url('./fonts/Brandon_Grotesque/Brandon_med_it.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Light";
+  src: url('./fonts/Brandon_Grotesque/Brandon_light.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Light Italic";
+  src: url('./fonts/Brandon_Grotesque/Brandon_light_it.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Black";
+  src: url('./fonts/Brandon_Grotesque/Brandon_blk.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Black Italic";
+  src: url('./fonts/Brandon_Grotesque/Brandon_blk_it.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Bold";
+  src: url('./fonts/Brandon_Grotesque/Brandon_bld.otf');
+}
+@font-face {
+  font-family: "Brandon Grotesque - Bold Italic";
+  src: url('./fonts/Brandon_Grotesque/Brandon_bld_it.otf');
+}
 span {
   color: #000;
 }
 .mdl-layout__header-row .mdl-navigation__link {
   color: #000;
+}
+body {
+}
+.layout-transparent {
+  background: url('./img/bg.png') no-repeat center / cover;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.top-header {
+  overflow: hidden;
+  text-align: center;
+}
+.top-header span {
+  margin: 0 auto;
+}
+.top-header span a {
+  display: inline-block;
+  text-decoration: none;
+  color: #030303;
+}
+.top-header span a:hover {
+  text-decoration: none;
+  color: grey;
+}
+.title h5 {
+  font-family: "Antipasto - ExtraLight", sans-serif;
+  font-size: 1.5em;
+  color: #20bdc2;
+}
+.top-header img {
+  width: 50px;
+}
+.navigation {
+  width: 100%;
+}
+.navigation .mdl-navigation__link {
+  margin: 0 auto;
+  font-family: "Brandon Grotesque - Regular", sans-serif;
+  font-size: 1.8em;
+  border-right: 3px solid black;
+  margin-right: -1%;
+}
+.navigation_container {
+  padding: 0 3px 0 3px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 1% 0;
+}
+#home {
+ background: rgba(0, 0, 0, 0.5);
+}
+#homeBody {
+  z-index: 1000;
+  position: absolute;
+  margin: 20em auto 0;
+}
+#home h1 {
+  font-family: "Brandon Grotesque - Black";
+font-size: 12.6em;
+position: relative;
+left: 1em;
 }

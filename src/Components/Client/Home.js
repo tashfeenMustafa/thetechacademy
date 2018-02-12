@@ -3,11 +3,16 @@
 *****/
 import React from 'react';
 
+import Header from '../Header/Header.js';
+
 class Home extends React.Component {
   render () {
     return (
-      <div>
-        <h1>Home</h1>
+      <div id="home">
+        <Header />
+        <section id="homeBody">
+          <h1 className="text-center">Learn. Build. Create.</h1>
+        </section>
       </div>
     );
   }

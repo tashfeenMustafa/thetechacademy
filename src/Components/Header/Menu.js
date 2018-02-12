@@ -7,15 +7,17 @@ import { Link } from 'react-router-dom';
 class Menu extends React.Component {
   render () {
     return (
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about-us">About Us</Link></li>
-        <li><Link to="/programs">Programs</Link></li>
-        <li><Link to="/projects-and-activities">Projects and Activities</Link></li>
-        <li><Link to="/team">Team</Link></li>
-        <li><Link to="/support-us">Support Us</Link></li>
-        <li><Link to="/contact-us">Contact Us</Link></li>
-      </ul>
+      <div className="mdl-layout__header-row navigation_container">
+        <nav className="mdl-navigation navigation">
+          <Link className="mdl-navigation__link text-center" to="/">HOME</Link>
+          <Link className="mdl-navigation__link" to="/about-us">ABOUT US</Link>
+          <Link className="mdl-navigation__link" to="/programs">PROGRAMS</Link>
+          <Link className="mdl-navigation__link" to="/projects-and-activities">PROJECTS &amp; ACTIVITIES</Link>
+          <Link className="mdl-navigation__link" to="/tta-blog">TUTORIALS FOR YOU</Link>
+          <Link className="mdl-navigation__link" to="/tta-blog">BLOG</Link>
+          <Link className="mdl-navigation__link" to="/contact-us">CONTACT US</Link>
+        </nav>
+      </div>
     );
   }
 }

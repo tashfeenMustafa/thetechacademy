@@ -1,9 +1,16 @@
 import React from 'react';
 
+import Header from '../Header/Header.js';
+
 class AboutUs extends React.Component {
   render () {
     return (
-      <h1>Contact</h1>
+      <div>
+        <Header />
+        <section className="contact-us">
+
+        </section>
+      </div>
     );
   }
 }

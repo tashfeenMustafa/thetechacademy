@@ -21,9 +21,6 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <Header />
-        </div>
-        <div>
           <Route path="/" exact component={Home} />
           <Route path="/about-us" exact component={AboutUs} />
           <Route path="/programs" exact component={Programs} />

@@ -131,7 +131,7 @@ video {
 .title h5 {
   font-family: "Antipasto - ExtraLight", sans-serif;
   font-size: 1.5em;
-  color: #20bdc2;
+  color: #FABD35;
 }
 .top-header img {
   width: 50px;
@@ -141,19 +141,25 @@ video {
 }
 .navigation .mdl-navigation__link {
   margin: 0 auto;
-  font-family: "Brandon Grotesque - Regular", sans-serif;
+  font-family: "Brandon Grotesque - Light", sans-serif;
   font-size: 1.8em;
-  border-right: 3px solid black;
-  margin-right: -1%;
+  color: #FFF;
+}
+.navigation .mdl-navigation__link:hover {
+  text-decoration: none;
+  font-family: "Brandon Grotesque - Black", sans-serif;
+  color: #F9D22D;
+}
+.navigation .mdl-navigation__link:active {
+  text-decoration: none;
+  font-family: "Brandon Grotesque - Black", sans-serif;
+  color: #F9D22D;
 }
 .navigation_container {
   padding: 0 3px 0 3px;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  border-top: 3px solid #20bdc2;
+  border-bottom: 3px solid #20bdc2;
   margin: 1% 0;
-}
-#home {
- background: rgba(0, 0, 0, 0.5);
 }
 #homeBody {
   z-index: 1000;
@@ -165,4 +171,5 @@ video {
 font-size: 12.6em;
 position: relative;
 left: 1em;
+color: #F9D22D;
 }

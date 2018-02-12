@@ -3,7 +3,6 @@
 *****/
 import React from 'react';
 
-import Video from './Video.js';
 import LogoContainer from './LogoContainer.js';
 import Menu from './Menu.js';
 
@@ -14,9 +13,6 @@ class Header extends React.Component {
 
         <div className="layout-transparent mdl-layout mdl-js-layout">
           <header className="mdl-layout__header mdl-layout__header--transparent">
-            (
-              {this.props.path === "/" ? <Video /> : null}
-            )
             <LogoContainer />
             <Menu />
           </header>
